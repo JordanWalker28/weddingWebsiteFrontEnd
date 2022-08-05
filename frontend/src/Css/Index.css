@@ -1,0 +1,102 @@
+ .collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 10%;
+}
+.collage__image {
+    --collage-image-width: 60vh;
+    display: inline;
+    position: relative;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 10px solid white;
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+.collage__image:nth-of-type(1) {
+    width: 40vh;
+    height: 40vh;
+    transform: translate(5%, -5%) rotate(-11deg);
+}
+.collage__image:nth-of-type(2) {
+    width: 40vh;
+    height: 40vh;
+    z-index: 2;
+    transform: scale(1.1);
+}
+.collage__image:nth-of-type(3) {
+    width: 40vh;
+    height: 40vh;
+    transform: translate(-5%, -5%) rotate(5deg);
+}
+
+.collage2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.collage2__image {
+    --collage2-image-width: 60vh;
+    display: inline;
+    position: relative;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 10px solid white;
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+.collage2__image:nth-of-type(1) {
+    width: 40vh;
+    height: 40vh;
+    transform: translate(-5%,13%) rotate(-5deg);
+    z-index: 2;
+
+}
+.collage2__image:nth-of-type(2) {
+    width: 50vh;
+    height: 40vh;
+    transform: translate(-10%, 10%) rotate(10deg);
+}
+
+.wrap{
+    width:600px;
+    margin:auto;
+    text-align: center;
+    opacity:0.8;
+}
+.wrap:hover{
+    opacity:1;
+}
+
+@media screen and (max-width: 600px) {
+    .collage__image:nth-of-type(1) {
+        width: 35vh;
+        height: 30vh;
+    }
+    .collage__image:nth-of-type(2) {
+        width: 30vh;
+        height: 30vh;
+    }
+    .collage__image:nth-of-type(3) {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .collage2__image:nth-of-type(1) {
+        width: 30vh;
+        height: 30vh;
+    }
+    .collage2__image:nth-of-type(2) {
+        width: 30vh;
+        height: 30vh;
+    }
+    
+  }
+
+  
+  
