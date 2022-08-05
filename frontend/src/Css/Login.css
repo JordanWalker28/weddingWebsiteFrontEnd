@@ -104,3 +104,15 @@ body{
 
 
   }
+
+  @media (max-width: 400px){
+    .bgvid {
+    object-position: -320px !important;
+}
+  }
+
+  @media (max-width: 300px){
+    .bgvid {
+    object-position: -280px !important;
+}
+  }

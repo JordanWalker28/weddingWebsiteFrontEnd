@@ -36,7 +36,7 @@
 .events-detail li {
   padding: 10px;
   border-bottom: 1px dashed #ccc;
-  line-height: 22px;
+  line-height: 32px;
   transition: ease .4s all;
 }
 
@@ -52,6 +52,7 @@
 }
 
 .event-time {
+  float: left;
   font-weight: 900;
 }
 
@@ -63,6 +64,10 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.events-detail li span {
+  float:left;
 }
 
 .event-location {
@@ -80,7 +85,7 @@
   margin-top: 3em;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1300px) {
   .date{
     padding: 0px;
     float: none;
@@ -100,3 +105,29 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 400px) {
+
+
+  span{
+    float: none;
+  }
+
+  .event-time {
+    /* float: left; */
+    float: none;
+  }
+
+  .events-detail li {
+    padding: 0px; 
+    line-height: 30px;
+}
+
+  .events-detail li span {
+    float: none;
+  }
+
+}
+
+
+

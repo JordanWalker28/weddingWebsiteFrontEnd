@@ -23,7 +23,7 @@ export const NavMenu = styled.div`
     position: relative;
     padding: 0.5rem 0rem;
     background-color: #680707;
-    color: black;
+    color: #f3ccbe;
     box-shadow: 0 2px 2px 2px rgb(9 9 9 / 23%);
 `;
   

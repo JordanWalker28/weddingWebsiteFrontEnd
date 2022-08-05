@@ -183,3 +183,20 @@ div.absolute2 {
   text-align: center;
   margin-top: 3vh;
 }
+
+@media screen and (max-width: 360px) {
+  h4{
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gifts-text{
+    width: 100%;
+    margin: none;
+  }
+}
+
+
+
