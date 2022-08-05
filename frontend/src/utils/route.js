@@ -13,7 +13,7 @@ function usePageViews() {
 
 const Auth = ({ loggedIn, path, component: Component, test }) => (
   test = usePageViews(),
-  <Route path={path} render={(props) => loggedIn ? test === "/login" ? <Redirect to ={"/index"}/> : <Redirect to ={test}/> : <Component {...props} />}/>
+  <Route path={path} render={(props) => loggedIn ? test === "/login" || "/" ? <Redirect to ={"/index"}/> : <Redirect to ={test}/> : <Component {...props} />}/>
 );
 const Protected = ({ loggedIn, path, component: Component }) => (
   <Route path={path} render={(props) => loggedIn ? <Component {...props} /> : <Redirect to="/login" />} />

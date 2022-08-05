@@ -18,8 +18,8 @@ export default function App() {
       <div className ="App">
       <Router>
         <Switch>
+          <AuthRoute exact path="/" component={Login} />
           <AuthRoute exact path="/login" component={Login} />
-
           <Fragment>
           <Navbar/>
           <ProtectedRoute exact path="/weddingDay" component={WeddingDay}/>
