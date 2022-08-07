@@ -1,5 +1,4 @@
 import Login from "./Login";
-import Signup from "./Signup";
 import React, { Fragment } from "react";
 import './App.css';
 import Navbar from '../components/Navbar/Navbar';

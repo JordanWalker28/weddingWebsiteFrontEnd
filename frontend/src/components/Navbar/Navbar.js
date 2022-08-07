@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ToggleSwitch from './NavToggle'
 import {NavLink, NavMenu} from './NavbarElements'
 

@@ -19,11 +19,11 @@ const Login = ({ login }) => {
     login(user);
   };
   return (
-    <div class="vid-container">
-      <img class="bgvid" src={left}/>
-      <div class="inner-container">
-        <img class="bgvid inner" src={left}/>
-        <div class="box">
+    <div className="vid-container">
+      <img className="bgvid" src={left} alt="loginImage"/>
+      <div className="inner-container">
+        <img className="bgvid inner" alt="loginImage" src={left}/>
+        <div className="box">
           <h1>Login</h1>
           <form onSubmit={handleSubmit}>
             <input type="username" name="username" />

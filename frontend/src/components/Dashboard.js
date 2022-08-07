@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { logout } from "../actions/session";
 import Header from '../components/GenericItems/PageHeaderLanding'
 import MainPolaroids from '../components/MainPolaroids'
 import helpers from '../components/Functions/LanguageFunctions'
 import PageOverviewTextTitle from '../components/GenericItems/PageOverviewTextTitle'
-// import Diet from "../components/Diet";
-
 
 const mapDispatchToProps = (dispatch) => ({
   logout: () => dispatch(logout()),

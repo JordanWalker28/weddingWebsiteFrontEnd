@@ -4,7 +4,6 @@ import Header from '../components/GenericItems/PageHeader'
 import helpers from '../components/Functions/LanguageFunctions'
 import IndexText from '../components/GenericItems/IndexText'
 import Address from '../components/GenericItems/Address'
-import PageOverviewTextTitle from '../components/GenericItems/PageOverviewTextTitle'
 
 const Venue = ( ) => {
 
