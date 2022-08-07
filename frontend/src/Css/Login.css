@@ -40,22 +40,20 @@ body{
   .box h1{
     text-align:center;
     margin:30px 0;
-    font-size:30px;
+    font-size:2em;
     color:#fff;
 
   }
   .box input{
     display:block;
-    width:300px;
+    width:80%;
     margin:20px auto;
     padding:15px;
     background:rgba(0,0,0,0.3);
     color:#fff;
     border:0;
   }
-  .box input:focus,.box input:active,.box button:focus,.box button:active{
-    outline:none;
-  }
+
   .box button{
     background:#2ecc71;
     border:0;
@@ -92,13 +90,16 @@ body{
         height:400px;
         position: 50% bottom;
         top:calc(60vh - 100px);
-        left:calc(50vw - 200px);
         overflow:hidden;
         left: 0;
       }
       .bgvid{
         object-position: -350px  !important;
       }
+
+      .box input {
+        width: 80%;
+    }
 
 
 

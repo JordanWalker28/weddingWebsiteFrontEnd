@@ -70,6 +70,10 @@ header {
 
   }
 
+  .menu a{
+    font-size: 2em;;
+  }
+
   .menu li+li {
       margin-top: 12px;
     }

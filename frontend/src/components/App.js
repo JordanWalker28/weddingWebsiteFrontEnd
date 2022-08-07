@@ -14,6 +14,11 @@ import Index from "./Dashboard";
 import { AuthRoute, ProtectedRoute } from "../utils/route";
 
 export default function App() {
+
+    if (localStorage.getItem("isBool") === null) {
+      localStorage.setItem('isBool', JSON.stringify(true));
+    }
+
     return ( 
       <div className ="App">
       <Router>

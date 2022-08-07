@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ToggleSwitch from './NavToggle'
 import {NavLink, NavMenu} from './NavbarElements'
+
 import "../../Css/NavBar.css";
 
-const Navbar = () => {
+const Navigation = () => {
 
   let item = (JSON.parse(localStorage.getItem('isBool')));
   const title = item === true ? "Patricia and Jordan" : "Patricia und Jordan";
@@ -13,19 +14,21 @@ const Navbar = () => {
   const music = item === true ? "Important Information" : "Wichtige Infos";
   const gifts = item === true ? "Gifts" : "Hochzeitsgeschenke";
 
+  const [checked, setChecked] = React.useState(false);
+  const onToggle = () => (setChecked(!checked));
 
   return (
       <NavMenu>
         <div className="logo"><a href="/index">{title}</a></div>
         <ul className="nav-links">
-          <input type="checkbox" id="checkbox_toggle" />
-          <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
+          <input type="checkbox" id="checkbox_toggle" checked={checked} onChange={onToggle} />
+          <label htmlFor="checkbox_toggle" className="hamburger" onChange={(e) => setChecked(e.target.checked)}>&#9776;</label>
           <div className="menu">
-            <li><NavLink to="/venue">{venue}</NavLink></li>
-            <li><NavLink to="/weddingday">{weddingDay}</NavLink></li>
-            <li><NavLink to="/discover">{discover}</NavLink></li>
-            <li><NavLink to="/music">{music}</NavLink></li>
-            <li><NavLink to="/gifts">{gifts}</NavLink></li>
+            <li><NavLink to="/venue" onClick={() => setChecked((c) => !c)}>{venue}</NavLink></li>
+            <li><NavLink to="/weddingday" onClick={() => setChecked((c) => !c)}>{weddingDay}</NavLink></li>
+            <li><NavLink to="/discover" onClick={() => setChecked((c) => !c)}>{discover}</NavLink></li>
+            <li><NavLink to="/music" onClick={() => setChecked((c) => !c)}>{music}</NavLink></li>
+            <li><NavLink to="/gifts" onClick={() => setChecked((c) => !c)}>{gifts}</NavLink></li>
             <li><ToggleSwitch/></li>
           </div>
         </ul>
@@ -33,4 +36,4 @@ const Navbar = () => {
   );
 };
   
-export default Navbar;
+export default Navigation;

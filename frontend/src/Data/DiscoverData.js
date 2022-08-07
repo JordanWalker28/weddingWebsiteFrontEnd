@@ -40,7 +40,7 @@ const items = [{
     title: 'Hotel Indigo',
     category: 'Hotels',
     categoryTest: 'Hotels',
-    description: 'Very close 4-star hotel to our wedding venue and we are also getting a discount for guests here. If you like to book at the Hotel Indigo Princes Street, kindly mention that you are a wedding guest at the Royal College of Physicians of Edinburgh. The rate should be £120/night. (approx. 7 minutes walking distance to our venue)',
+    description: 'Very close 4-star hotel to our wedding venue and we are also getting a discount for guests here. If you like to book at the Hotel Indigo Princes Street, kindly mention that you are a wedding guest at the Royal College of Physicians of Edinburgh. The rate should be £120/night. (approx. 7-minute walking distance to our venue)',
     descriptionGerman: 'Dies ist ein 4-Sterne Hotel, welches nicht weit von unserer Hochzeitslocation entfernt liegt. Zudem wurde uns auch ein Rabatt zur Verfügung gestellt. Solltet ihr das Hotel Indigo Princes Street in Erwägung ziehen, braucht ihr nur erwähnen, dass ihr Gäste auf einer Hochzeit im Royal College of Physicians of Edinburgh seid. Das Angebot sollte bei £120 pro Nacht liegen. (ca. 7 Minuten Fußweg)'
 },{
     id:3,
@@ -57,7 +57,7 @@ const items = [{
     category: 'Hotels',
     categoryTest: 'Hotels',
     description: 'Just further up from Lothian Road and near the Meadows is this little hotel. Friends of ours have stayed here before and said they had lovely time. It’s a little bit more in the residential neighbourhood area rather than in the middle of everything, but the city centre is still in walking distance and there are lots of different restaurants nearby. (approx. 35-minute walking distance to our wedding venue, or 8 minutes by taxi)',
-    descriptionGerman: 'Das Hotel befindet sich am äußeren Ende von der Lothian Road und in der vom ‘Meadows’-Park. Freunde von uns hatten hier eine wirklich angenehme Bleibe. Die Umgebung selbst ist mehr ‘nachbarschaftlich’ statt ‘mitten im Geschehen’, aber man ist dennoch nicht weit vom Stadtzentrum entfernt. (ca. 35 Minuten Fußweg zur Hochzeits-Location oder ca. 8 Minuten mit dem Taxi)'
+    descriptionGerman: 'Das Hotel befindet sich am äußeren Ende von der Lothian Road und in der vom ‘Meadows’-Park. Freunde von uns hatten hier eine wirklich angenehme Bleibe. Die Umgebung selbst ist mehr ‘nachbarschaftlich’ statt ‘mitten im Geschehen’, aber man ist dennoch nicht weit vom Stadtzentrum entfernt. (ca. 35 Minuten Fußweg zur Hochzeitslocation oder ca. 8 Minuten mit dem Taxi)'
 },{    
     id:5,
     image: haymarket,
