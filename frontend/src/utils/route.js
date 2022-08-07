@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { BrowserRouter, Redirect, Route, withRouter, useLocation } from "react-router-dom";
+import { Redirect, Route, withRouter, useLocation } from "react-router-dom";
 
 const mapStateToProps = ({ session: { userId } }) => ({
   loggedIn: Boolean(userId),
